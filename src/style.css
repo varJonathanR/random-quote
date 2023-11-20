@@ -1,0 +1,108 @@
+/* Base & Reset */
+@import url("https://fonts.googleapis.com/css2?family=Outfit&display=swap");
+:root {
+  --outfit-font: "Outfit", sans-serif;
+  --blue: #6466E9;
+  --dark: #111729;
+  --gray: #606b7d;
+  --white: #FFFFFF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  font-family: var(--outfit-font);
+}
+
+body, .quote-container, .buttons, button, ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  background-color: var(--dark);
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+}
+
+h1, p {
+  text-align: center;
+}
+
+h1 {
+  color: var(--white);
+  font-size: 1rem;
+}
+
+p {
+  font-size: 1.5rem;
+  color: var(--gray);
+  margin-top: 1rem;
+}
+
+ul {
+  list-style-type: none;
+  color: var(--blue);
+  gap: 10px;
+  margin-top: 10px;
+}
+ul li {
+  border: 1px solid var(--blue);
+  border-radius: 1000px;
+  padding: 4px 10px;
+  background-color: rgba(100, 102, 233, 0.2);
+  font-size: 14px;
+}
+
+button {
+  background: none;
+  border: transparent;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+/* Styles */
+.quote-container {
+  background-image: url("./assets/bg-image-random-quote.svg");
+  background-size: cover;
+  background-position: center;
+  width: 60%;
+  height: auto;
+  background-color: rgba(74, 85, 103, 0.2);
+  border-radius: 10px;
+  padding: 2rem 3rem;
+  flex-direction: column;
+}
+
+.buttons {
+  border: 1px solid var(--gray);
+  margin-top: 1rem;
+  padding: 5px 10px;
+  border-radius: 10px;
+  gap: 5px;
+}
+.buttons .vertical {
+  border: 1px solid var(--gray);
+  height: calc(100% + 10px);
+}
+
+@media screen and (max-width: 767px) {
+  h1 {
+    color: var(--white);
+    font-size: 0.8rem;
+  }
+  p {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+  }
+  ul li {
+    font-size: 10px;
+  }
+  .quote-container {
+    width: 80%;
+    padding: 1rem 1.5rem;
+  }
+}/*# sourceMappingURL=style.css.map */
